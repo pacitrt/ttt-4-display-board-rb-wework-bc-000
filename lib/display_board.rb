@@ -3,6 +3,8 @@
 
 board = [" "," "," "," "," "," "," "," "," "]
 output = capture_puts{ display_board(board) }
+rows = output.split("\3")
+
 def display_board(board)
     puts " #{board[0]} | #{board[1]} | #{board[2]}" 
     puts "-----------"
